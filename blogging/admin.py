@@ -14,12 +14,14 @@ class CategoryInline(admin.TabularInline):
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
     model = Post
-    inlines = [CategoryInline,]
-    fields = ('title', 'text', 'author', 'published_date')
+    inlines = [
+        CategoryInline,
+    ]
+    fields = ("title", "text", "author", "published_date")
 
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
     model = Category
-    fields = ('name', 'description')
-    exclude = ('posts',)
+    fields = ("name", "description")
+    exclude = ("posts",)
