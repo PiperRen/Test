@@ -101,6 +101,7 @@ virtualenv-clone==0.5.7
 virtualenvwrapper==4.8.4
 wcwidth==0.2.5
 Werkzeug==0.15.5
+whitenoise==6.4.0
 win32-setctime==1.1.0
 wrapt==1.13.3
 zipp==3.8.0
